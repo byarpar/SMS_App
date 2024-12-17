@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Campaigns - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Social Media</span> Campaigns</h1>
+            </div>
+            <nav>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span aria-hidden="true">☰</span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="popular-apps.html">Popular Apps</a></li>
+                    <li><a href="parents-help.html">Parents Help</a></li>
+                    <li><a href="livestreaming.html">Livestreaming</a></li>
+                    <li class="current"><a href="contact.html">Contact</a></li>
+                    <li><a href="legislation.html">Legislation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Contact Us</h1>
+                <p>Have questions or concerns about social media safety? We're here to help. Fill out the form below to get in touch with our team.</p>
+                
+                <form action="submit_contact.php" method="post">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="button-3d">Send Message</button>
+                </form>
+            </article>
+
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>Get in Touch</h3>
+                    <p>Email: info@socialmediacamp.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Social St, Internet City, Web 12345</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <section id="privacy-policy">
+        <div class="container">
+            <h2>Privacy Policy</h2>
+            <p>We respect your privacy and are committed to protecting your personal data. Please read our <a href="privacy-policy.html">Privacy Policy</a> to understand how we collect, use, and safeguard your information.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Social Media Campaigns, Copyright &copy; <span class="copyright-year"></span></p>
+        <p>You are here: Contact</p>
+        <div id="social-buttons">
+            <a href="#" class="social-button">Facebook</a>
+            <a href="#" class="social-button">Twitter</a>
+            <a href="#" class="social-button">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+

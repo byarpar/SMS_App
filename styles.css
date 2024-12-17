@@ -1,0 +1,304 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button-3d {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: all 0.3s ease;
+}
+
+.button-3d:hover {
+    background-color: #3e8e41;
+}
+
+.button-3d:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 800px;
+    background: url('img/cat.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+#showcase h1 {
+    margin-top: 600px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+/* Sidebar */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Main-col */
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+/* Services */
+ul#services li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #newsletter button, .quote button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"], .quote input, .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+/* 3D animation */
+.animate-3d {
+    transition: transform 0.3s;
+}
+
+.animate-3d:hover {
+    transform: perspective(500px) rotateY(15deg);
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #35424a;
+        padding: 1rem;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Form Validation Styles */
+.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+/* Weather Widget and Social Feed Styles */
+#weather-widget, #social-feed {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.social-post {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 3px;
+}
+
+/* Custom cute star cursor */
+body {
+    cursor: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">\
+<path fill="%23FFB6C1" d="M12 2l2.39 6.74H22l-5.8 4.21 2.23 6.89L12 16.25l-6.43 4.59 2.23-6.89L2 8.74h7.61z"/>\
+</svg>') 12 12, auto;
+}

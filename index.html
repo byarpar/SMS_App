@@ -19,7 +19,14 @@
                 </button>
                 <ul>
                     <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="information.html">Information</a></li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="information.html">About Us</a></li>
+                            <li><a href="information.html">Our Mission</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="popular-apps.html">Popular Apps</a></li>
                     <li><a href="parents-help.html">Parents Help</a></li>
                     <li><a href="livestreaming.html">Livestreaming</a></li>
@@ -48,7 +55,9 @@
     </section>
 
     <section id="boxes">
+        
         <div class="container">
+            <h2>Popular Social Media Apps</h2>
             <div class="box">
                 <img src="img/image copy.png" alt="Instagram">
                 <h3>Instagram</h3>
@@ -63,6 +72,19 @@
                 <img src="img/image copy 2.png" alt="Snapchat">
                 <h3>Snapchat</h3>
                 <p>Explore Snapchat's privacy settings and safety tools.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="safety-tips">
+        <div class="container">
+            <h2>How to Stay Safe Online</h2>
+            <div class="tips-grid">
+                <div class="tip-item">Be careful with personal info</div>
+                <div class="tip-item">Use strong passwords</div>
+                <div class="tip-item">Check privacy settings</div>
+                <div class="tip-item">Think before posting</div>
+                <div class="tip-item">Be kind online</div>
             </div>
         </div>
     </section>
@@ -83,9 +105,8 @@
             <a href="#" class="social-button">Instagram</a>
         </div>
     </footer>
-
+    <div id="custom-cursor"></div>
     <script src="script.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
-

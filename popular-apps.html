@@ -18,9 +18,16 @@
                     <span aria-hidden="true">☰</span>
                 </button>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="information.html">Information</a></li>
-                    <li class="current"><a href="popular-apps.html">Popular Apps</a></li>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="information.html">About Us</a></li>
+                            <li><a href="information.html">Our Mission</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="popular-apps.html">Popular Apps</a></li>
                     <li><a href="parents-help.html">Parents Help</a></li>
                     <li><a href="livestreaming.html">Livestreaming</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -99,7 +106,8 @@
             <a href="#" class="social-button">Instagram</a>
         </div>
     </footer>
-
+    
+    <div id="custom-cursor"></div>
     <script src="script.js"></script>
     <script src="main.js"></script>
 </body>

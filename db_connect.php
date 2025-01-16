@@ -1,9 +1,9 @@
 <?php
 // Database connection parameters
-$servername = "localhost"; // Usually "localhost" for phpMyAdmin
-$username = "root"; // Your phpMyAdmin username
-$password = ""; // Your phpMyAdmin password
-$dbname = "smc_database"; // Your database name
+$servername = "localhost";
+$username = "root";
+$password = "keybee97";
+$dbname = "smc_database";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -25,49 +25,92 @@ function sanitize_input($data) {
     return $conn->real_escape_string($data);
 }
 
-// Example function to insert a new user into the database
-function insert_user($first_name, $last_name, $email) {
+// Function to check if a username exists
+function username_exists($username) {
     global $conn;
-    
-    $first_name = sanitize_input($first_name);
-    $last_name = sanitize_input($last_name);
+    $username = sanitize_input($username);
+    $sql = "SELECT * FROM users WHERE username = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    return $result->num_rows > 0;
+}
+
+// Function to register a new user
+function register_user($username, $password, $email) {
+    global $conn;
+    $username = sanitize_input($username);
     $email = sanitize_input($email);
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
     
-    $sql = "INSERT INTO users (first_name, last_name, email) VALUES ('$first_name', '$last_name', '$email')";
+    $sql = "INSERT INTO users (username, password, email) VALUES (?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sss", $username, $hashed_password, $email);
     
-    if ($conn->query($sql) === TRUE) {
-        return "New user created successfully";
+    if ($stmt->execute()) {
+        return true;
     } else {
-        return "Error: " . $sql . "<br>" . $conn->error;
+        return false;
     }
 }
 
-// Example function to retrieve all users from the database
-function get_all_users() {
+// Function to authenticate a user
+function authenticate_user($username, $password) {
     global $conn;
+    $username = sanitize_input($username);
     
-    $sql = "SELECT * FROM users";
-    $result = $conn->query($sql);
+    $sql = "SELECT * FROM users WHERE username = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
     
-    if ($result->num_rows > 0) {
-        return $result->fetch_all(MYSQLI_ASSOC);
-    } else {
-        return [];
+    if ($result->num_rows == 1) {
+        $user = $result->fetch_assoc();
+        if (password_verify($password, $user['password'])) {
+            return $user;
+        }
     }
+    
+    return false;
 }
 
-// Function to get all contacts
-function get_all_contacts() {
+// Function to update login attempts
+function update_login_attempts($username, $attempts) {
     global $conn;
+    $username = sanitize_input($username);
+    $sql = "UPDATE users SET login_attempts = ?, last_attempt = NOW() WHERE username = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("is", $attempts, $username);
+    $stmt->execute();
+}
+
+// Function to check if account is locked
+function is_account_locked($username) {
+    global $conn;
+    $username = sanitize_input($username);
+    $sql = "SELECT login_attempts, last_attempt FROM users WHERE username = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
     
-    $sql = "SELECT * FROM contacts ORDER BY created_at DESC";
-    $result = $conn->query($sql);
-    
-    if ($result->num_rows > 0) {
-        return $result->fetch_all(MYSQLI_ASSOC);
-    } else {
-        return [];
+    if ($result->num_rows == 1) {
+        $user = $result->fetch_assoc();
+        if ($user['login_attempts'] >= 3) {
+            $last_attempt = strtotime($user['last_attempt']);
+            $current_time = time();
+            if ($current_time - $last_attempt < 600) { // 600 seconds = 10 minutes
+                return true;
+            } else {
+                // Reset login attempts after 10 minutes
+                update_login_attempts($username, 0);
+            }
+        }
     }
+    
+    return false;
 }
 
 // Remember to close the connection when you're done

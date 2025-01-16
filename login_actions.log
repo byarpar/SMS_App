@@ -1,0 +1,111 @@
+[2025-01-16 12:40:50] Login attempt for user: dsfsdsf
+[2025-01-16 12:40:50] Username does not exist: dsfsdsf
+[2025-01-16 12:40:53] Login attempt for user: dsfsdf
+[2025-01-16 12:40:53] Username does not exist: dsfsdf
+[2025-01-16 12:40:55] Login attempt for user: dsfsdf
+[2025-01-16 12:40:55] Username does not exist: dsfsdf
+[2025-01-16 12:40:58] Login attempt for user: dsfds
+[2025-01-16 12:40:58] Username does not exist: dsfds
+[2025-01-16 12:43:25] Login attempt for user: dsfdf
+[2025-01-16 12:43:25] Username does not exist: dsfdf
+[2025-01-16 12:43:28] Login attempt for user: sdfsd
+[2025-01-16 12:43:28] Username does not exist: sdfsd
+[2025-01-16 12:43:30] Login attempt for user: sdfds
+[2025-01-16 12:43:30] Username does not exist: sdfds
+[2025-01-16 12:43:33] Login attempt for user: sfsd
+[2025-01-16 12:43:33] Username does not exist: sfsd
+[2025-01-16 12:43:41] Login attempt for user: dsfs
+[2025-01-16 12:43:41] Username does not exist: dsfs
+[2025-01-16 12:43:45] Login attempt for user: dsfdsf
+[2025-01-16 12:43:45] Username does not exist: dsfdsf
+[2025-01-16 12:43:49] Login attempt for user: sdfs
+[2025-01-16 12:43:49] Username does not exist: sdfs
+[2025-01-16 12:45:01] Login attempt for user: byarpar
+[2025-01-16 12:45:02] User: byarpar, Login attempts: 0, Last attempt: 2025-01-16 17:59:18, Time diff: -18856 seconds
+[2025-01-16 12:45:02] Successful login for user: byarpar
+[2025-01-16 12:45:07] Login attempt for user: byarpar
+[2025-01-16 12:45:07] User: byarpar, Login attempts: 0, Last attempt: 2025-01-16 19:15:02, Time diff: -23395 seconds
+[2025-01-16 12:45:08] Failed login attempt for user: byarpar. Remaining attempts: 2
+[2025-01-16 12:45:13] Login attempt for user: byarparbyarpar
+[2025-01-16 12:45:13] Username does not exist: byarparbyarpar
+[2025-01-16 12:45:17] Login attempt for user: byarparbyarpar
+[2025-01-16 12:45:17] Username does not exist: byarparbyarpar
+[2025-01-16 12:45:22] Login attempt for user: byarpar
+[2025-01-16 12:45:22] User: byarpar, Login attempts: 1, Last attempt: 2025-01-16 19:15:08, Time diff: -23386 seconds
+[2025-01-16 12:45:22] Successful login for user: byarpar
+[2025-01-16 12:45:29] Login attempt for user: byarparbyarpar
+[2025-01-16 12:45:29] Username does not exist: byarparbyarpar
+[2025-01-16 12:45:33] Login attempt for user: byarparbyarpar
+[2025-01-16 12:45:33] Username does not exist: byarparbyarpar
+[2025-01-16 12:45:38] Login attempt for user: byarpar
+[2025-01-16 12:45:38] User: byarpar, Login attempts: 0, Last attempt: 2025-01-16 19:15:22, Time diff: -23384 seconds
+[2025-01-16 12:45:39] Successful login for user: byarpar
+[2025-01-16 12:45:44] Login attempt for user: byarpar
+[2025-01-16 12:45:44] User: byarpar, Login attempts: 0, Last attempt: 2025-01-16 19:15:39, Time diff: -23395 seconds
+[2025-01-16 12:45:44] Failed login attempt for user: byarpar. Remaining attempts: 2
+[2025-01-16 12:45:57] Login attempt for user: byarpar
+[2025-01-16 12:45:57] User: byarpar, Login attempts: 1, Last attempt: 2025-01-16 19:15:44, Time diff: -23387 seconds
+[2025-01-16 12:45:57] Failed login attempt for user: byarpar. Remaining attempts: 1
+[2025-01-16 12:46:03] Login attempt for user: byarparbyarpar
+[2025-01-16 12:46:03] Username does not exist: byarparbyarpar
+[2025-01-16 12:46:09] Login attempt for user: byarpar
+[2025-01-16 12:46:09] User: byarpar, Login attempts: 2, Last attempt: 2025-01-16 19:15:57, Time diff: -23388 seconds
+[2025-01-16 12:46:09] Successful login for user: byarpar
+[2025-01-16 12:46:14] Login attempt for user: byarparbyarpar
+[2025-01-16 12:46:14] Username does not exist: byarparbyarpar
+[2025-01-16 12:46:19] Login attempt for user: byarpar
+[2025-01-16 12:46:19] User: byarpar, Login attempts: 0, Last attempt: 2025-01-16 19:16:09, Time diff: -23390 seconds
+[2025-01-16 12:46:19] Successful login for user: byarpar
+[2025-01-16 12:46:24] Login attempt for user: byarpar
+[2025-01-16 12:46:24] User: byarpar, Login attempts: 0, Last attempt: 2025-01-16 19:16:19, Time diff: -23395 seconds
+[2025-01-16 12:46:25] Failed login attempt for user: byarpar. Remaining attempts: 2
+[2025-01-16 12:46:36] Login attempt for user: byarpar
+[2025-01-16 12:46:36] User: byarpar, Login attempts: 1, Last attempt: 2025-01-16 19:16:25, Time diff: -23389 seconds
+[2025-01-16 12:46:36] Failed login attempt for user: byarpar. Remaining attempts: 1
+[2025-01-16 12:46:40] Login attempt for user: byarpar
+[2025-01-16 12:46:40] User: byarpar, Login attempts: 2, Last attempt: 2025-01-16 19:16:36, Time diff: -23396 seconds
+[2025-01-16 12:46:40] Account locked for user: byarpar due to too many failed attempts
+[2025-01-16 12:46:48] Login attempt for user: byarpar
+[2025-01-16 12:46:48] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23392 seconds
+[2025-01-16 12:46:48] Account locked for user: byarpar. Remaining time: 400 minutes
+[2025-01-16 12:46:52] Login attempt for user: byarpar
+[2025-01-16 12:46:52] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23388 seconds
+[2025-01-16 12:46:52] Account locked for user: byarpar. Remaining time: 400 minutes
+[2025-01-16 12:46:55] Login attempt for user: byarpar
+[2025-01-16 12:46:55] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23385 seconds
+[2025-01-16 12:46:55] Account locked for user: byarpar. Remaining time: 400 minutes
+[2025-01-16 12:47:01] Login attempt for user: byarpar
+[2025-01-16 12:47:01] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23379 seconds
+[2025-01-16 12:47:01] Account locked for user: byarpar. Remaining time: 400 minutes
+[2025-01-16 12:48:17] Login attempt for user: byarpar
+[2025-01-16 12:48:17] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23303 seconds
+[2025-01-16 12:48:17] Account locked for user: byarpar. Remaining time: 23903 seconds
+[2025-01-16 12:48:36] Login attempt for user: byarpar
+[2025-01-16 12:48:36] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23284 seconds
+[2025-01-16 12:48:36] Account locked for user: byarpar. Remaining time: 23884 seconds
+[2025-01-16 12:49:49] Login attempt for user: byarpar
+[2025-01-16 12:49:49] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23211 seconds
+[2025-01-16 12:49:49] Account locked for user: byarpar. Remaining time: 23811 seconds
+[2025-01-16 12:50:15] Login attempt for user: byarpar
+[2025-01-16 12:50:15] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23185 seconds
+[2025-01-16 12:50:15] Account locked for user: byarpar. Remaining time: 23785 seconds
+[2025-01-16 12:50:22] Login attempt for user: byarpar
+[2025-01-16 12:50:22] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23178 seconds
+[2025-01-16 12:50:22] Account locked for user: byarpar. Remaining time: 23778 seconds
+[2025-01-16 12:53:10] Login attempt for user: byarpar
+[2025-01-16 12:53:10] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -23010 seconds
+[2025-01-16 12:53:10] Account locked for user: byarpar. Remaining time: 23020 seconds
+[2025-01-16 12:53:45] Login attempt for user: byarpar
+[2025-01-16 12:53:45] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -22975 seconds
+[2025-01-16 12:53:45] Account locked for user: byarpar. Remaining time: 22985 seconds
+[2025-01-16 12:54:50] Login attempt for user: sdfdsf
+[2025-01-16 12:54:50] Username does not exist: sdfdsf
+[2025-01-16 12:54:54] Login attempt for user: byarpar
+[2025-01-16 12:54:54] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -22906 seconds
+[2025-01-16 12:54:54] Account locked for user: byarpar. Remaining time: 392 minutes
+[2025-01-16 12:56:08] Login attempt for user: byarpar
+[2025-01-16 12:56:08] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -22832 seconds
+[2025-01-16 12:56:08] Account locked for user: byarpar. Remaining time: 391 minutes
+[2025-01-16 12:56:18] Login attempt for user: byarpar
+[2025-01-16 12:56:18] User: byarpar, Login attempts: 3, Last attempt: 2025-01-16 19:16:40, Time diff: -22822 seconds
+[2025-01-16 12:56:18] Account locked for user: byarpar. Remaining time: 391 minutes

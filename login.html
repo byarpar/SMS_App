@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Campaigns - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Social Media</span> Campaigns</h1>
+            </div>
+            <nav>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span aria-hidden="true">☰</span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Login</h1>
+                
+                <div id="message-container"></div>
+                
+                <form action="login.php" method="post" class="login-form">
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="button-3d">Login</button>
+                </form>
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>Social Media Campaigns, Copyright &copy; <span class="copyright-year"></span></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="session-messages.js"></script>
+</body>
+</html>
+

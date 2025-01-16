@@ -342,3 +342,29 @@ footer {
     display: block;
 }
 
+#message-container {
+    margin-bottom: 20px;
+}
+
+.error-message, .success-message {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    background-color: #ffe6e6;
+    border: 1px solid #ff9999;
+    color: #cc0000;
+}
+
+.success-message {
+    background-color: #e6ffe6;
+    border: 1px solid #99ff99;
+    color: #006600;
+}
+
+.countdown {
+    font-weight: bold;
+    margin-top: 5px;
+}

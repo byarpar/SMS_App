@@ -26,13 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $current_time = time();
         $time_diff = $current_time - $lockout_time;
         
-        if ($time_diff < 10) { // 10 seconds lockout
-            $remaining_time = ceil(10 - $time_diff);
-            setcookie('error_message', urlencode("Account is locked. Please try again in {$remaining_time} seconds."), time() + 30, "/");
+        if ($time_diff < 600) { // 600 seconds = 10 minutes
+            $remaining_time = ceil((600 - $time_diff) / 60);
+            setcookie('error_message', urlencode("Account is locked. Please try again in {$remaining_time} minutes."), time() + 30, "/");
             header("Location: login.html");
             exit();
         } else {
-            // Reset login attempts after 10 seconds
+            // Reset login attempts after 10 minutes
             $reset_sql = "UPDATE users SET login_attempts = 0 WHERE username = ?";
             $reset_stmt = $conn->prepare($reset_sql);
             $reset_stmt->bind_param("s", $username);
@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         $remaining_attempts = 3 - $new_attempts;
         if ($remaining_attempts <= 0) {
-            setcookie('error_message', urlencode("Account is locked for 10 seconds due to too many failed attempts."), time() + 30, "/");
+            setcookie('error_message', urlencode("Account is locked for 10 minutes due to too many failed attempts."), time() + 30, "/");
         } else {
             setcookie('error_message', urlencode("Invalid password. {$remaining_attempts} attempts remaining before account lockout."), time() + 30, "/");
         }

@@ -19,24 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         errorDiv.textContent = decodeURIComponent(errorMessage);
         messageContainer.appendChild(errorDiv);
         deleteCookie('error_message');
-
-        // If the error message contains "Account is locked", start a countdown
-        if (errorMessage.includes("Account is locked")) {
-            const seconds = parseInt(errorMessage.match(/\d+/)[0]);
-            let remainingTime = seconds;
-            const countdownElement = document.createElement('div');
-            countdownElement.className = 'countdown';
-            errorDiv.appendChild(countdownElement);
-
-            const countdownInterval = setInterval(() => {
-                remainingTime--;
-                countdownElement.textContent = `You can try again in ${remainingTime} seconds.`;
-                if (remainingTime <= 0) {
-                    clearInterval(countdownInterval);
-                    errorDiv.remove();
-                }
-            }, 1000);
-        }
     }
 
     if (successMessage) {

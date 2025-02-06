@@ -69,23 +69,3 @@ The project aims to raise awareness and improve digital literacy among users.
 
 ---
 
-## Usage
-1. Browse the homepage to view the list of popular apps and their safety tips.
-2. Use the navigation menu to explore additional sections, such as "Parents Help" and "Livestreaming."
-3. Use the search form to find specific safety techniques.
-4. Access additional resources, like the "Legislation" page, to stay informed.
-
----
-
-## Folder Structure
-```plaintext
-social-media-campaigns/
-├── index.html          # Homepage
-├── popular-apps.html   # Popular Apps Page
-├── styles.css          # Stylesheet
-├── script.js           # JavaScript file for custom cursor and interactions
-├── images/             # Images for the website
-├── php/
-│   ├── form-handler.php  # Handles form submissions
-│   ├── config.php        # Database configuration
-├── database.sql        # SQL file for database setup
